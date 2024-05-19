@@ -10,7 +10,7 @@ const newsRoutes = require('./router/newsRouter');
 
 //let's tackle cors
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://tech-talks2316.netlify.app/",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };
@@ -31,8 +31,9 @@ app.use('/api/news', newsRoutes);
 
 
 const PORT = 5000;
-connectDb().then(() => { 
-app.listen(PORT, () => {
-    console.log(`server is running at port: ${PORT}`);
-    });
+connectDB().then(() => {
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(Server is running on port ${PORT});
 });
+
+})
