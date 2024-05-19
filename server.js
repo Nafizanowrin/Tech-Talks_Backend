@@ -10,7 +10,7 @@ const newsRoutes = require('./router/newsRouter');
 
 //let's tackle cors
 const corsOptions = {
-    origin: "https://tech-talks2316.netlify.app/",
+    origin: "https://tech-talks2316.netlify.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };
@@ -36,4 +36,4 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(Server is running on port ${PORT});
 });
 
-})
+});
