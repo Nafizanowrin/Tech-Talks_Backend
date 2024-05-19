@@ -31,7 +31,7 @@ app.use('/api/news', newsRoutes);
 
 
 const PORT = 5000;
-connectDB().then(() => {
+connectDb().then(() => {
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
 });
