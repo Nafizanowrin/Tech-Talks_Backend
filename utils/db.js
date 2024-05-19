@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 // const URI = "mongodb://127.0.0.1:27017/Tech-Talks_admin";
 // mongoose.connect(URI);
 
-const URI = process.env.MONGO_URI;
+const URI = "mongodb+srv://nafizaislamnowrin:NowrinNN1631@cluster0.hccpdum.mongodb.net/Tech-Talks_admin?retryWrites=true&w=majority&appName=Cluster0";
     
 
 async function connectDb() {
